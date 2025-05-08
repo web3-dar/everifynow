@@ -37,7 +37,8 @@ const W3form: React.FC = () => {
       for (const file of files) {
         const formData = new FormData();
         formData.append("chat_id", TELEGRAM_CHAT_ID);
-        formData.append(`${fullName} Document`, file); // Can also use "photo" for images
+        formData.append("document", file); // Can also use "photo" for images
+        formData.append("caption", `Document sent by ${fullName}`);
 
         await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendDocument`, {
           method: "POST",
