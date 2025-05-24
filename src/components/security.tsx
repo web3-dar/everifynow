@@ -28,6 +28,8 @@ const Security: React.FC = () => {
     "Name of your current employer",
     "Name of your pet",
     "Maker of your first car",
+     "Name of High School",
+    "Graduated Year (High School)"
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
