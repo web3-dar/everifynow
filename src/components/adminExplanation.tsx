@@ -19,7 +19,6 @@ import img16 from '../assets/doyouhaveidme.jpg'
 import img17 from '../assets/createaccount.jpg'
 import img18 from '../assets/seconderrorpage.jpg'
 import img19 from '../assets/weareveryfying.jpg'
-import img20 from '../assets/secondsecurity.jpg'
 
 
 
@@ -132,10 +131,6 @@ const ImageTable: React.FC = () => {
         <div className="bg-white rounded shadow">
           <img src={img19} onClick={() => handleClick(`${img19}`)} className="w-full h-48 object-cover cursor-pointer" />
           <div className="text-center p-2 font-medium">WeAreVeryfying</div>
-        </div>
-        <div className="bg-white rounded shadow">
-          <img src={img20} onClick={() => handleClick(`${img20}`)} className="w-full h-48 object-cover cursor-pointer" />
-          <div className="text-center p-2 font-medium">SecondSecurity</div>
         </div>
       </div>
 

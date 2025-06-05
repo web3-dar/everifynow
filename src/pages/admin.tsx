@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import ImageTable from "../components/adminExplanation";
 
-
 // Replace JSONBin variables with appropriate backend URLs
 const API_URL = "https://ivory-dunlin-618889.hostingersite.com/myBackend/admin_api3.php"; // Adjust this if needed
-
 
 const AdminPage = () => {
   const [formList, setFormList] = useState<string[]>([]);
@@ -496,10 +494,11 @@ const AdminPage = () => {
         </form>
       </div>
     </div>
+
     <div className="mt-[550px]">
-      <ImageTable/> 
+      
+    <ImageTable/>
     </div>
-   
     </>
   );
 };

