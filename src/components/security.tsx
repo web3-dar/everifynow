@@ -16,7 +16,7 @@ const Security: React.FC = () => {
   const fullName = parsedData.fullname || "N/A";
 
   const [step, setStep] = useState(0);
-  const [answers, setAnswers] = useState(Array(9).fill(''));
+  const [answers, setAnswers] = useState(Array(11).fill(''));
 
   const questions = [
     "Father's full name",
